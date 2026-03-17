@@ -1,4 +1,6 @@
-import { useState } from 'react'
+const fs = require('fs');
+
+const code = `import { useState } from 'react'
 
 const emotions = [
   { emoji: '😰', label: 'Anxious', color: '#e8f4f8', crisis: false },
@@ -195,7 +197,7 @@ export default function Home() {
           <div className="crisis-popup">
             <div className="crisis-popup-emoji">💙</div>
             <h3>You do not have to face this alone.</h3>
-            <p>Whatever you are going through right now, there are people who want to help. <strong>You matter.</strong></p>
+            <p>Whatever you are going through right now, there are people who want to help. You matter.</p>
             <a href="https://988lifeline.org" target="_blank" className="crisis-popup-btn">Call or text 988 now</a>
             <a href="https://www.crisistextline.org" target="_blank" className="crisis-popup-link">Or text HOME to 741741</a>
             <button className="crisis-popup-close" onClick={() => setShowCrisis(false)}>I am okay for now</button>
@@ -291,4 +293,7 @@ export default function Home() {
       )}
     </div>
   )
-}
+}`;
+
+fs.writeFileSync('src/pages/Home.jsx', code);
+console.log('Done!');

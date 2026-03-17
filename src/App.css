@@ -385,3 +385,505 @@ body {
   background: #7c6fcd;
   color: white;
 }
+.crisis-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.crisis-popup {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+}
+
+.crisis-popup-emoji {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.crisis-popup h3 {
+  font-size: 22px;
+  color: #2c2c54;
+  margin-bottom: 12px;
+}
+
+.crisis-popup p {
+  color: #555;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.crisis-popup-btn {
+  display: block;
+  background: #7c6fcd;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.crisis-popup-link {
+  display: block;
+  color: #7c6fcd;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.crisis-popup-close {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 13px;
+  cursor: pointer;
+}
+.cause-picker {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 48px 40px;
+  text-align: center;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(124,111,205,0.12);
+}
+
+.cause-picker h3 {
+  font-size: 28px;
+  color: #2c2c54;
+  margin-bottom: 10px;
+}
+
+.cause-picker p {
+  color: #888;
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+.cause-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.cause-btn {
+  background: #f7f5ff;
+  border: 2px solid #e0d9ff;
+  border-radius: 14px;
+  padding: 20px 16px;
+  font-size: 15px;
+  color: #2c2c54;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+  text-align: center;
+}
+
+.cause-btn:hover {
+  background: #ede9ff;
+  border-color: #7c6fcd;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(124,111,205,0.15);
+}
+.breathe-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.breathe-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.breathe-header h2 {
+  font-size: 36px;
+  color: #2c2c54;
+  margin-bottom: 8px;
+}
+
+.breathe-header p {
+  color: #888;
+  font-size: 16px;
+}
+
+.technique-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.technique-tab {
+  background: white;
+  border: 2px solid #e0d9ff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.technique-tab--active {
+  background: #7c6fcd;
+  border-color: #7c6fcd;
+  color: white;
+}
+
+.breathe-container {
+  border-radius: 24px;
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bubble-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+  margin-bottom: 24px;
+}
+
+.bubble {
+  background: rgba(124,111,205,0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  border: 3px solid rgba(124,111,205,0.5);
+}
+
+.bubble-count {
+  font-size: 48px;
+  font-weight: 500;
+  color: #2c2c54;
+}
+
+.bubble-rings {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(124,111,205,0.2);
+}
+
+.ring-2 {
+  border-color: rgba(124,111,205,0.1);
+}
+
+.breathe-label {
+  font-size: 24px;
+  font-weight: 500;
+  color: #2c2c54;
+  margin-bottom: 12px;
+  min-height: 36px;
+}
+
+.breathe-cycles {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 24px;
+}
+
+.breathe-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.breathe-tips {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.breathe-tip-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.breathe-tip-card h4 {
+  color: #2c2c54;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.breathe-tip-card p {
+  color: #666;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.tools-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.tools-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tools-header h2 {
+  font-size: 36px;
+  color: #2c2c54;
+  margin-bottom: 8px;
+}
+
+.tools-header p {
+  color: #888;
+  font-size: 16px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.tool-card {
+  background: white;
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.tool-card h3 {
+  font-size: 20px;
+  color: #2c2c54;
+  margin-bottom: 8px;
+}
+
+.tool-desc {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.grounding-box {
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+}
+
+.grounding-number {
+  font-size: 64px;
+  font-weight: 500;
+  color: #2c2c54;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.grounding-sense {
+  font-size: 20px;
+  font-weight: 500;
+  color: #7c6fcd;
+  margin-bottom: 12px;
+}
+
+.grounding-instruction {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.grounding-progress {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.grounding-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e0d9ff;
+}
+
+.grounding-dot--active {
+  background: #7c6fcd;
+}
+
+.grounding-done {
+  text-align: center;
+  padding: 20px;
+}
+
+.grounding-done h4 {
+  font-size: 20px;
+  color: #2c2c54;
+  margin: 12px 0 8px;
+}
+
+.grounding-done p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.boost-box {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.boost-message {
+  font-size: 18px;
+  color: #2c2c54;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #f7f5ff;
+  border-radius: 12px;
+}
+
+.boost-placeholder {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #f7f5ff;
+  border-radius: 12px;
+}
+
+
+.mood-log {
+  border-top: 1px solid #f0ebff;
+  padding-top: 16px;
+}
+
+.mood-log-title {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mood-log-entry {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+  padding: 6px 0;
+  border-bottom: 1px solid #f7f5ff;
+}
+
+.mood-log-time {
+  color: #bbb;
+  font-size: 12px;
+}
+.mood-grid-new {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.mood-btn-new {
+  background: #f7f5ff;
+  border: 2px solid #e0d9ff;
+  border-radius: 14px;
+  padding: 16px 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.mood-btn-new:hover {
+  border-color: #7c6fcd;
+  background: #ede9ff;
+  transform: translateY(-2px);
+}
+
+.mood-btn-new--active {
+  border-color: #7c6fcd;
+  background: #ede9ff;
+}
+
+.mood-emoji-new {
+  font-size: 28px;
+}
+
+.mood-label-new {
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+}
+
+.mood-other-box {
+  background: #f7f5ff;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.mood-other-input {
+  width: 100%;
+  border: 2px solid #e0d9ff;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 15px;
+  margin-bottom: 12px;
+  outline: none;
+  color: #2c2c54;
+}
+
+.mood-other-input:focus {
+  border-color: #7c6fcd;
+}
+
+.mood-emoji-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.emoji-pick-btn {
+  background: white;
+  border: 2px solid #e0d9ff;
+  border-radius: 8px;
+  padding: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.emoji-pick-btn--active {
+  border-color: #7c6fcd;
+  background: #ede9ff;
+}
+
+.emoji-pick-btn:hover {
+  border-color: #7c6fcd;
+}
